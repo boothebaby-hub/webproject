@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">☕ CoffeeShop</div>
+        
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="page-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div>
+                <h3>Visit Our Shop</h3>
+                <p style="margin-bottom: 15px;">123 Brew Lane, Coffee City</p>
+                <h3>Hours of Operation</h3>
+                <p>Mon - Fri: 7:00 AM - 6:00 PM</p>
+                <p>Sat - Sun: 8:00 AM - 4:00 PM</p>
+            </div>
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
